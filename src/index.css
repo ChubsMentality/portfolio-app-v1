@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+@font-face {
+    font-family: 'AkiraExpanded';
+    src: url('./assets/Fonts/AkiraExpanded/AkiraExpanded.otf');
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .active-panel {
+        @apply px-[15px] py-[5px] bg-lightDark text-[#fff] text-[.85rem]
+        transition-colors duration-300 ease-in tablet:text-[1.1rem] tablet:px-[20px] tablet:py-[8px]
+        laptop:text-[.85rem] laptop:px-[15px] laptop:py-[7px] 1280:text-[.9rem] 1440:text-[1rem] 1440:py-[8px] 1440:px-[18px]
+        1600:text-[1.1rem] 1600:px-[23px] 1600:py-[9px] 1920:text-[1.45rem]
+    }
+
+    .inactive-panel {
+        @apply px-[15px] py-[5px] bg-inactiveTab text-inactiveTabTxt text-[.85rem]
+        transition-colors duration-300 ease-in tablet:text-[1.1rem] tablet:px-[20px] tablet:py-[8px]
+        laptop:text-[.85rem] laptop:px-[15px] laptop:py-[7px] 1280:text-[.9rem] 1440:text-[1rem] 1440:py-[8px] 1440:px-[18px]
+        1600:text-[1.1rem] 1600:px-[23px] 1600:py-[9px] 1920:text-[1.45rem] 1920:py-[9px] 1920:px-[28px]
+    }
+
+    .link-dark {
+        @apply relative font-Poppins font-light text-[.9rem] cursor-pointer transition-all duration-[300] ease-in
+        laptop:text-[.8rem] laptop:before:w-[0%] laptop:before:h-[1px] laptop:before:bg-lightDark laptop:before:absolute laptop:hover:font-medium
+        laptop:before:bottom-0 laptop:before:left-0 laptop:hover:before:w-full laptop:before:transition-all laptop:before:duration-[300] laptop:before:ease-in 
+        1280:text-[.85rem] 1440:text-[.98rem] 1600:text-[1.1rem] 1920:text-[1.25rem]
+    }
+
+    .link-light {
+        @apply relative font-Poppins font-light text-[.9rem] cursor-pointer transition-all duration-[300] ease-in 
+        laptop:text-[.8rem] laptop:before:w-[0%] laptop:before:h-[1px] laptop:before:bg-[white] laptop:before:absolute laptop:hover:font-medium
+        laptop:before:bottom-[-2px] laptop:before:left-0 laptop:hover:before:w-full laptop:before:transition-all laptop:before:duration-[300] laptop:before:ease-in 
+        1280:text-[.85rem] 1440:text-[.98rem] 1600:text-[1.1rem] 1920:text-[1.25rem]
+    }
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    background: none;
+    width: .7em;
+}
+
+::-webkit-scrollbar-track {
+    background: #0f0f0f;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 100vw;
+    background-color: rgb(21, 21, 21);
+    border: 1px solid rgba(255, 255, 255, .2);
+    margin-block: 15px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(36, 36, 36);
+}
+
+::-webkit-scrollbar-thumb:hover ::-webkit-scrollbar {
+    width: 1em;
+}

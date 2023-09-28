@@ -353,10 +353,10 @@ export default function App() {
       </div>
     
       <p 
-        className='absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-60%] text-center text-[2.9rem] leading-[56px] font-Poppins font-semibold z-10 select-none
-        425:text-[3.45rem] 425:leading-[63px] tablet:text-[5rem] tablet:leading-[86px] laptop:text-[4.5rem] laptop:leading-[75px]
-        1280:text-[5.5rem] 1280:leading-[90px] 1440:leading-[100px] 1440:text-[5.7rem] 1600:text-[6.3rem] 1600:leading-[110px]
-        1920:text-[7.3rem] 1920:leading-[125px]'
+        className='absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-center text-[2.9rem] leading-[56px] font-Poppins font-semibold z-10 select-none
+        425:text-[3.45rem] 425:leading-[63px] tablet:text-[5rem] tablet:leading-[86px] laptop:text-[6rem] laptop:leading-[90px]
+        1280:text-[6.5rem] 1280:leading-[100px] 1440:leading-[110px] 1440:text-[6.7rem] 1600:text-[6.5rem] 1600:leading-[105px]
+        1920:text-[8.2rem] 1920:leading-[135px]'
         ref={heroText}
       >
         And I build 

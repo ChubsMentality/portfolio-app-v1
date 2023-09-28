@@ -42,11 +42,14 @@ export default function ProjectCard({ displayType, displaySrc, id, setSelectedPr
                         className='h-[260px] w-[200px] object-cover absolute top-[50%] left-[50%] translate-x-[-40%] translate-y-[-50%] select-none
                         425:h-[290px] 425:w-[220px] tablet:h-[340px] tablet:w-[255px] pointer-events-none 1280:h-[360px] 1280:w-[275px]
                         1440:h-[400px] 1440:w-[300px] 1600:h-[440px] 1600:w-[330px] 1920:h-[520px] 1920:w-[400px]'
-                        src={displaySrc} />
+                        src={displaySrc} 
+                        loading='lazy'
+                    />
                     :
                     <img
                         className='h-full w-full object-cover select-none pointer-events-none 1440:rounded-[5px]' 
                         src={displaySrc}  
+                        loading='lazy'
                     />
                 :
                 null

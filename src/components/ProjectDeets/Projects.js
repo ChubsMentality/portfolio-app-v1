@@ -1,4 +1,4 @@
-import LandingPage from '../../assets/landingPage.jpg'
+import Bron from '../../assets/bron.jpg'
 import Tbbt from '../../assets/tbbt.jpg'
 import CountryWeather from '../../assets/countryWeather.svg'
 
@@ -9,7 +9,7 @@ export const Projects = [
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce euismod iaculis facilisis. Vestibulum ut tempor mi, at fringilla diam. Quisque.',
         displayType: 'video',
         displaySrc: 'https://res.cloudinary.com/duqrbjm81/video/upload/v1682066262/pexels-danny-orloff-4380323-1080x1920-60fps_dtzfeg.mp4',
-        languages: ['ReactJS', 'React-Query', 'Redux Toolkit', 'GSAP', 'ExpressJS', 'MongoDB'],
+        languages: ['ReactJS', 'TanStack-Query', 'Redux Toolkit', 'GSAP', 'ExpressJS', 'MongoDB'],
         status: 'Ongoing',
         link: null,
     },
@@ -25,13 +25,13 @@ export const Projects = [
     },
     {
         id: 2,
-        name: 'Travel Inspired Landing Page',
+        name: 'Nike Inspired Landing Page',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce euismod iaculis facilisis. Vestibulum ut tempor mi, at fringilla diam. Quisque.',
         displayType: 'img',
-        displaySrc: LandingPage,
-        languages: ['NextJS', 'Tailwind CSS', 'Framer Motion', 'GSAP'],
-        status: 'Ongoing',
-        link: null,
+        displaySrc: Bron,
+        languages: ['ReactJS', 'CSS Modules', 'GSAP'], 
+        status: 'Finished',
+        link: 'https://nike-landing-page-delta.vercel.app/',
     },
     {
         id: 3,

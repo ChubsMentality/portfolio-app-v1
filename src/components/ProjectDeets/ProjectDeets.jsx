@@ -14,7 +14,9 @@ export default function ProjectDeets({ id, name, desc, displayType, displaySrc, 
             const t1 = gsap.timeline()
             
             if(window.innerWidth >= 1024) {
-
+                gsap.from(modal.current, {
+                    display: 'none',
+                })
             } else {
                 gsap.fromTo(modal.current, {
                     display: 'none',
@@ -48,7 +50,13 @@ export default function ProjectDeets({ id, name, desc, displayType, displaySrc, 
         const t1 = gsap.timeline()
 
         if(window.innerWidth >= 1024) {
-            setVisible(false)
+            gsap.to(modal.current, {
+                opacity: 0,
+            })
+
+            setTimeout(() => {
+                setVisible(false)
+            }, 200)
         } else {
             t1.fromTo(content.current, {
                 y: 30,
@@ -81,6 +89,8 @@ export default function ProjectDeets({ id, name, desc, displayType, displaySrc, 
             }, 1000)
         }
     }
+
+    alert(status)
 
     return (
         <div 
